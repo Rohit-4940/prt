@@ -61,6 +61,8 @@ body {
     width: 100px;
     text-align: center;
     transition: width 0.3s ease;
+    border: 2px solid white; /* White border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 15px rgba(0, 0, 0, 0.19); /* 3D shadow effect */
 }
 
 .time-box span {
@@ -117,6 +119,7 @@ body {
         font-size: 1.2em;
     }
 }
+
 /* Balloon container to hold all balloons */
 .balloon-container {
     position: fixed;
