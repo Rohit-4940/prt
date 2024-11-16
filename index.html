@@ -5,9 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isha Birthday Timer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
 </head>
-<body>
-    <div class="container">     
+<body class="blue-background">
+    <div class="container fade-in" id="profileContainer">
+        <div class="profile-img-container">
+            <img src="../prt/img/profile.jpg" alt="Profile Picture" class="profile-img">
+        </div>
+        <h1 class="name">Isha Magrati</h1>
+        <p class="title">Making my mark in the medical world</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@IshaMagrati" class="social-link social-youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/_ishamagrati_/" class="social-link social-instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link social-facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link social-linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>       
+        <button id="showCountdownButton" class="celebrate-button">An exciting day is back</button>
+    </div>
+
+    <div class="container" id="birthdayContainer" style="display: none;">
         <div class="corner-line left"></div>
         <div class="corner-line right"></div>
         <div class="corner-line top"></div>
@@ -33,6 +58,7 @@
         <p class="birth-date">Your Birth-Date: 5 December</p>
         <div id="coming-soon-message" class="coming-soon-message">🎉 The Day of Isha Magrati 🎉</div>
         <div id="balloon-container" class="balloon-container"></div>
+        <button id="goBackButton" class="go-back-button">Go Back</button>
     </div>
 
     <script src="script.js"></script>
